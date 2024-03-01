@@ -1,0 +1,8 @@
+docker run -it --rm \
+    -p 8443:8443 \
+    -e PUID=$(id -u) \
+    -e PGID=$(id -g) \
+    -v ./data:/home/coder/data \
+    -v ~/.config:/home/coder/.config \
+    -e SUDO_PASSWORD=localadmin \
+    lscr.io/linuxserver/code-server:latest

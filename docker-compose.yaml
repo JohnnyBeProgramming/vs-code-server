@@ -1,0 +1,21 @@
+---
+services:
+  code-server:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    restart: unless-stopped
+    user: ${CURRENT_UID}
+    ports:
+      - 8443:8443
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Brussels/UTC
+      - SUDO_PASSWORD=localadmin
+      - DEFAULT_WORKSPACE=/workspace
+      - DOCKER_USER=cheulyop
+    volumes:
+      - .:/config/workspace
+      - ./data:/config/data
+      #- ./.vscode/extensions.json:/config/extensions.json
+      #- ./config:/config
