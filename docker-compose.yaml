@@ -17,6 +17,5 @@ services:
       - .:/config/workspace
       - ./data:/config/data
       - .vscode/extensions.json:/config/extensions/extensions.json
-      - ~/.ssh/id_rsa:/config/.ssh/id_rsa
-      - ~/.ssh/id_rsa.pub:/config/.ssh/id_rsa.pub
+      - ~/.ssh:/config/.ssh
       - ~/.gitconfig:/etc/gitconfig
