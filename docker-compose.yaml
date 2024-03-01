@@ -16,5 +16,5 @@ services:
     volumes:
       - .:/config/workspace
       - ./data:/config/data
-      - ~/.gitconfig:/etc/gitconfig
       - .vscode/extensions.json:/config/extensions/extensions.json
+      - ~/.gitconfig:/etc/gitconfig

@@ -1,4 +1,4 @@
-//devcontainer.json
+// https://code.visualstudio.com/docs/devcontainers/containers
 {
 	"name": "Virtual Environment",
   
