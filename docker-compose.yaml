@@ -13,11 +13,8 @@ services:
       - TZ=Brussels/UTC
       - SUDO_PASSWORD=localadmin
       - DEFAULT_WORKSPACE=/workspace
-      - DOCKER_USER=cheulyop
     volumes:
-      - ~/.gitconfig:/etc/gitconfig
       - .:/config/workspace
       - ./data:/config/data
+      - ~/.gitconfig:/etc/gitconfig
       - .vscode/extensions.json:/config/extensions/extensions.json
-      #- ./.vscode/extensions.json:/config/extensions.json
-      #- ./config:/config
