@@ -1,0 +1,30 @@
+//devcontainer.json
+{
+	"name": "MyTest",
+  
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "lscr.io/linuxserver/code-server:latest",
+  
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+  
+	"customizations": {
+	  "vscode": {
+		"settings": {},
+		"extensions": ["streetsidesoftware.code-spell-checker"]
+	  }
+	},
+  
+	// "forwardPorts": [3000],
+  
+	"portsAttributes": {
+	  "3000": {
+		"label": "Hello Remote World",
+		"onAutoForward": "notify"
+	  }
+	},
+  
+	"postCreateCommand": "ls -la"
+  
+	// "remoteUser": "root"
+  }

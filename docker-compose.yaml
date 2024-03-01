@@ -18,5 +18,6 @@ services:
       - ~/.gitconfig:/etc/gitconfig
       - .:/config/workspace
       - ./data:/config/data
+      - .vscode/extensions.json:/config/extensions/extensions.json
       #- ./.vscode/extensions.json:/config/extensions.json
       #- ./config:/config
