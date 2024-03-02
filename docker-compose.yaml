@@ -16,6 +16,6 @@ services:
     volumes:
       - .:/config/workspace
       - ./data:/config/data
-      - .vscode/extensions.json:/config/extensions/extensions.json
-      - ~/.ssh:/config/.ssh
       - ~/.gitconfig:/etc/gitconfig
+      - ~/.ssh/id_rsa:/config/.ssh/id_rsa
+      - .vscode/extensions.json:/config/extensions/extensions.json
